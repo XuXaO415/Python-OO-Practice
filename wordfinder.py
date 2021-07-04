@@ -1,5 +1,5 @@
 """Word Finder: finds random words from a dictionary."""
-import random
+import random 
 
 class WordFinder:
     """ Random word generator from a list of words
@@ -19,26 +19,25 @@ class WordFinder:
 'dog'
 
 https://docs.python.org/3/tutorial/inputoutput.html#reading-and-writing-files
-
+https://docs.python.org/3/tutorial/inputoutput.html
 
 f = open('words.txt', 'r')
 print(f.read())
 
-f = open()
+f = open('smLst.txt', 'r')
+print(f.read())
 
 
 """
 
-    def __init__(self, file_path):
-        """ """
-        
-    def 
-        
-        
+    def __init__(self, f):
+        """Reads from a small list of words from path"""
+        f = open('smLst')
+        print(f.read())
         
     def random(self):
-        """  """
-        return (self)
+        """Return a random word from smLst """
+        return random.choice(self.smLst)
     
     
         
