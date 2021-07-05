@@ -24,7 +24,8 @@ class SerialGenerator:
     
     def __init__(self, start=0):
         """Initializes serial generator"""
-        self.start = self.next = start
+        self.start = start
+        self.next = start
         
     def __repr__(self):
         """__repr__ is a representation method"""
@@ -32,8 +33,11 @@ class SerialGenerator:
         
     def generate(self):
         """Generate next serial"""
-        self.next +=1
-        return self.next - 1
+        # self.next +=1
+        # return self.next - 1
+        out = self.num
+        self.num += 1
+        return out
         
     def reset(self):
         """Resets serial generator to zero"""

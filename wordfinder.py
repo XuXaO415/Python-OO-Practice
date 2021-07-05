@@ -21,6 +21,8 @@ class WordFinder:
 https://docs.python.org/3/tutorial/inputoutput.html#reading-and-writing-files
 https://docs.python.org/3/tutorial/inputoutput.html
 
+open(filename, mode)
+
 f = open('words.txt', 'r')
 print(f.read())
 
@@ -30,14 +32,20 @@ print(f.read())
 
 """
 
-    def __init__(self, f):
+    def __init__(self, file_path):
         """Reads from a small list of words from path"""
-        f = open('smLst')
-        print(f.read())
+        # f = open(file_path)
+        # self.f = self
+        
+        words_file = open('words.txt', 'r')
+        self.words.txt = 
+        
+        
+    
         
     def random(self):
-        """Return a random word from smLst """
-        return random.choice(self.smLst)
+        """Return a random word from words/txt """
+        return random.choice(words.txt)
     
     
         
